@@ -10,11 +10,11 @@ app.use(json());
 
 app.post("/breakfast", async (req, res) => {
   const breakfastToCook = req.body.breakfast;
-  const brekfast = await Breakfast.create(breakfastToCook).catch(e =>
+  const breakfast = await Breakfast.create(breakfastToCook).catch(e =>
     res.status(422).json(e.toJSON())
   );
 
-  res.status(201).json(brekfast.toJSON());
+  res.status(201).json(breakfast.toJSON());
 });
 
 mongoose
