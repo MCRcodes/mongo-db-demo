@@ -19,7 +19,7 @@ Express server running on port 3000
 
 ## Notes
 
-- Use postman to explore the api - note the error messages on your console when something fails. You shouldn't need to restart the express server (nodemo does that for us) but you might need to cancel pending requests in postman.
+- Use postman to explore the api - note the error messages on your console when something fails. You shouldn't need to restart the `express` server (`nodemon` does that for us) but you might need to cancel pending requests in postman.
 - Connecting to a db will create it if it doesn't already exist.  
 - `index.js` uses async/await syntax instead of callback or Promises (more on https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
 - `breakfast` folder contains the breakfast example for the Mongo/Mongoose lecture. Can be run with `npm run breakfast`
